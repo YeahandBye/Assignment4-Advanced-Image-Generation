@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv/
+data/
+.ipynb_checkpoints/
+
+# Local development files
+.git_assignment3_backup/
+.ipynb_checkpoints/
+.pytest_cache/
+*.log
+
+# Temporary or duplicate checkpoints
+checkpoints/*_test.pth
+checkpoints/*_initial.pth
+
+# Keep selected trained models
+!checkpoints/generator.pth
+!checkpoints/ebm_cifar10_5epochs.pth
+!checkpoints/diffusion_cifar10_5epochs.pth
+
+# Backup and duplicate experiment files
+helper_lib/model_gan_backup.py
+generate_diffusion_original.py
+outputs/ebm_generated_200steps_final.png
+outputs/ebm_test_samples.png
+
+# Ignore redundant discriminator weights
+checkpoints/discriminator.pth
